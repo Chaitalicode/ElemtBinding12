@@ -1,0 +1,40 @@
+<mvc:View controllerName="EB.ElemtBinding12.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:t="sap.ui.table">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table items="{/employeeData}" selectionChange="onSelectItem" mode="SingleSelect">
+							<columns>
+								<Column>
+									<Text text="Employee Name"></Text>
+								</Column>
+									<Column>
+									<Text text="Employee Salary"></Text>
+								</Column>
+									<Column>
+									<Text text="Employee Age"></Text>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+								<cells>
+									<Text text="{name}"></Text>
+									<Text text="{salary}"></Text>
+									<Text text="{age}"></Text>
+								</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						
+						<List id="ListId">
+							<items>
+								<ObjectListItem type="Active" intro="{name}" title="{age}" number="{salary}"></ObjectListItem>
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
