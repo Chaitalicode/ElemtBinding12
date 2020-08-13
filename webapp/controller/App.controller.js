@@ -15,6 +15,7 @@ sap.ui.define([
 			var OList = this.getView().byId("ListId");
 			//Bind that path to that particular control.
 			OList.bindElement(listItm);
+			sap.m.MessageToast.show("hi");
 		}
 	});
 });
