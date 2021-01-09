@@ -1,18 +1,32 @@
 {
-  "name": "ElemtBinding12",
+  "name": "elemtbinding12",
   "version": "0.0.1",
-  "description": "",
-  "devDependencies": {
-    "@ui5/cli": "1.13.0",
-    "@sap/ui5-builder-webide-extension": "1.0.x"
-  },
   "scripts": {
+    "start": "fiori run --open index.html",
     "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
+  },
+  "devDependencies": {
+    "@ui5/cli": "2.5.0",
+    "@ui5/fs": "2.0.1",
+    "@ui5/logger": "2.0.0",
+    "@sap/ux-ui5-tooling": "1"
   },
   "ui5": {
     "dependencies": [
-      "@sap/ui5-builder-webide-extension"
+      "@sap/ux-ui5-tooling"
     ]
   },
-  "private": "true"
+  "private": "true",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaitalicode/ElemtBinding12.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaitalicode/ElemtBinding12/issues"
+  },
+  "homepage": "https://github.com/Chaitalicode/ElemtBinding12#readme",
+  "description": ""
 }
